@@ -1,11 +1,7 @@
 {
-  "buildpacks": [
-    {
-      "url": "heroku/python"
-    }
-  ],
   "environments": {
     "test": {
+      "addons": ["heroku-postgresql:hobby-dev"],
       "test": "pipenv run ./manage.py test"
     }
   }
